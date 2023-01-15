@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\0115\test1.c">
+    <ClCompile Include="test2.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
