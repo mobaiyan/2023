@@ -1,0 +1,3 @@
+﻿  test1.c
+D:\VS2022\code\mobaiyan\practices\2023\0115\test1.c(55,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  01 15.vcxproj -> D:\VS2022\code\mobaiyan\practices\2023\01 15\x64\Debug\01 15.exe

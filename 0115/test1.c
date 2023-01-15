@@ -22,10 +22,46 @@
 //    for (tmp = 0; tmp < a; tmp++)
 //    {
 //        getchar();
-//        scanf("%d", ch[tmp++]);//æ•°ç»„[ä¸èƒ½æ˜¯å˜é‡ åªèƒ½æ˜¯å¸¸é‡]
+//        scanf("%d", ch[tmp++]);//Êı×é[²»ÄÜÊÇ±äÁ¿ Ö»ÄÜÊÇ³£Á¿]
 //    }
 //    printf("%d", max);
 //    return 0;
 //}
-//æ€ä¹ˆæ‰èƒ½å†™ä¸€ä¸ªå¯ä»¥ä¸é™åˆ¶è¾“å…¥æ•°æ•°é‡çš„æ¯”å¤§å°çš„ç¨‹åºå‘¢ï¼Ÿ 
-//æ•°ç»„çš„å¤§å°ä¸èƒ½ç”¨å˜é‡
+//ÔõÃ´²ÅÄÜĞ´Ò»¸ö¿ÉÒÔ²»ÏŞÖÆÊäÈëÊıÊıÁ¿µÄ±È´óĞ¡µÄ³ÌĞòÄØ£¿ 
+//Êı×éµÄ´óĞ¡²»ÄÜÓÃ±äÁ¿
+
+int Max(int a,int b,int c)
+{
+	int max = a;
+	if (b > a) max = b;
+	if (c > max)max = c;
+	return max;
+}
+
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int i = 1;
+	int max = 0;
+	int maxu = 0;
+	int ch[] = { 0 };
+	printf("Tips:exit----1 1 1\n");
+	printf("if over input enter\n");
+	do
+	{
+		printf("No.%d three numbers\n",i++);
+		scanf("%d %d %d", &a, &b, &c);
+		max = Max(a, b, c);
+		if (max > maxu)
+		{
+			maxu = max;
+			max = 0;
+		}
+		else max = 0;
+	} while (a!=b||b!=c);
+	printf("Max:%d\n", maxu);
+	return 0;
+}
+//ÃãÇ¿ÄÜÓÃ ÓĞµãÌ«¸´ÔÓÁË ¹À¼ÆÔËĞĞÆğÀ´Ğ§ÂÊ²»ÊÇºÜ¸ß µÈÑ§ÉîÈëÁË»ØÍ·ÔÙÖØ×ö¸ö
