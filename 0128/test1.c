@@ -10,9 +10,36 @@ int my_strlen(char * str)//arr代表的是数组的首个字符的地址
     else
         return 0;
 }
+// int main()
+// {
+//     char arr[]="hello";
+//     printf("%d\n",my_strlen(arr));//这里接收递归完成后的值
+//     return 0;
+// }
+
+int Fac(int x)
+{
+    if (x <= 1)
+        return 1;
+    else
+    {
+        return x * Fac(x-1);
+    }
+}
+
+// int main()
+// {
+//     int n = 0;
+//     scanf("%d",&n);
+
+//     int ret = Fac(n);
+
+//     printf("%d",ret);
+//     return 0;
+// }
+
 int main()
 {
-    char arr[]="hello";
-    printf("%d\n",my_strlen(arr));//这里接收递归完成后的值
+
     return 0;
 }
