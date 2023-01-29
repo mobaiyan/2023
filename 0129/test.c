@@ -57,17 +57,44 @@
 //      return 0;
 //  }
 
-int main()
+// int main()
+// {
+//     99乘法表
+//     int i = 0;
+//     int n = 0;
+//     for(i = 1;i <= 9; i++)
+//     {
+//         for(n = 1;n <= i; n++)
+//         {
+//             printf("%d*%d=%2d ",n,i,n*i);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+void print_table(int x)
 {
     int i = 0;
     int n = 0;
-    for(i = 1;i <= 9; i++)
+    for(i = 1;i <= x;i++)
     {
         for(n = 1;n <= i; n++)
         {
-            printf("%d*%d=%2d ",n,i,n*i);
+            printf("%2d*%-2d=%-2d ",n,i,i * n);
         }
         printf("\n");
     }
+
+}
+
+
+int main()
+{
+    //打印一个由自己指定的乘法口诀表
+    int a = 0;
+
+    scanf("%d",&a);
+
+    print_table(a);
     return 0;
 }
