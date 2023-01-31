@@ -48,30 +48,30 @@
 //计算一个数的每位之和(用递归实现)
 //如 调用DigitSum(1729) 应该返回1+7+2+9 和为19
 
-// int DigitSum(int x)
-// {
-// 	//>0多递归一次 效率低
-// 	// if(x > 0)
-// 	// {
-// 	// 	return DigitSum(x / 10) + (x % 10);//input的最后一位
-// 	// }
-// 	if(x > 9)
-// 	{
-// 		return DigitSum(x / 10) + (x % 10);//input的最后一位
-// 	}
-// 	else
-// 	{
-// 		return x;
-// 	}
-// }
+ int DigitSum(int x)
+ {
+ 	//>0多递归一次 效率低
+ 	// if(x > 0)
+ 	// {
+ 	// 	return DigitSum(x / 10) + (x % 10);//input的最后一位
+ 	// }
+ 	if(x > 9)
+ 	{
+ 		return DigitSum(x / 10) + (x % 10);//input的最后一位
+ 	}
+ 	else
+ 	{
+ 		return x;
+ 	}
+ }
 
-// int main()
-// {
-// 	int input = 0;
-// 	scanf("%d",&input);
+ int main()
+ {
+ 	int input = 0;
+ 	scanf("%d",&input);
 
-// 	DigitSum(input);
+ 	DigitSum(input);
 
-// 	printf("输入:%d,输出:%d\n",input,DigitSum(input));
-// 	return 0;
-// }
+ 	printf("输入:%d,输出:%d\n",input,DigitSum(input));
+ 	return 0;
+ }
