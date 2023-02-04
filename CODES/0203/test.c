@@ -17,20 +17,18 @@ void game()
     InitBoard(board,ROW,COL);
     //打印棋盘
     DisplayBoard(board,ROW,COL);
-
-    while(1)//开始走棋
-    {
-        //玩家下棋
-        Playmove(board,ROW,COL);
-    }
+    //输出胜者
+    PrintWinner(board,ROW,COL);
 }
 
 int main()
 {
+    srand((unsigned)time(NULL));
     int input = 0;
     do
     {   
         menu();
+        printf("choose the options\n");
         scanf("%d",&input);
         switch (input)
         {
@@ -38,10 +36,10 @@ int main()
                 game();
                 break;
             case 0:
-                printf("exit game");
+                printf("exit game\n");
                 break;
             default: 
-                printf("error choice");
+                printf("error choice\n");
                 break;
         }
     } while (input);

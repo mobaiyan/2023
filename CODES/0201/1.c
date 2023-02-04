@@ -14,6 +14,7 @@ int main()
         for(n = 0;n < 5;n++)
         {
 //            printf("%c",ch[i][n]);
+            printf("%d",ch[i][n]);
             printf("&ch[%d][%d] = %p\n",i ,n, &ch[i][n]);
         }
        // printf("\n");
