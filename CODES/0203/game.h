@@ -9,7 +9,8 @@
 
 
 //函数的声明
-
+//游戏主体
+void game();
 //初始化棋盘
 void InitBoard(char board[ROW][COL],int row,int col);
 

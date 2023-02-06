@@ -1,4 +1,5 @@
 #include"game.h"
+
 #include"game.c"//vscode要引用源文件才能找到头文件
 
 void menu()
@@ -9,17 +10,7 @@ void menu()
     printf("************************\n");
 }
 
-void game()
-{
-    //创建数组
-    char board[ROW][COL];
-    //初始化棋盘 添加空格
-    InitBoard(board,ROW,COL);
-    //打印棋盘
-    DisplayBoard(board,ROW,COL);
-    //输出胜者
-    PrintWinner(board,ROW,COL);
-}
+
 
 int main()
 {

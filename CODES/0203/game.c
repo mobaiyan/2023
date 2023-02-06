@@ -1,5 +1,36 @@
 #include"game.h"
 
+void game()//游戏主体
+{
+    //创建数组
+    char board[ROW][COL];
+    //初始化棋盘 添加空格
+    InitBoard(board,ROW,COL);
+    //打印棋盘
+    DisplayBoard(board,ROW,COL);
+    //输出胜者
+    while(1)//开始走棋
+    {
+        //玩家下棋
+        Playmove(board,ROW,COL);
+        DisplayBoard(board,ROW,COL);
+        if(JudgeWin(board,ROW,COL) == '*')
+        {
+            printf("gamer wins\n");
+            break;
+        }
+
+        
+        //电脑下棋
+        ComputerMove(board,ROW,COL);
+        DisplayBoard(board,ROW,COL);
+        if (JudgeWin(board,ROW,COL) == '#')
+        {
+            printf("computer wins\n");
+            break;            
+        }
+    }
+}
 
 void InitBoard(char board[ROW][COL],int row,int col)
 {
@@ -84,14 +115,13 @@ void Playmove(char board[ROW][COL],int row,int col)//玩家下棋
 void ComputerMove(char board[ROW][COL],int row,int col)
 {
     //获取两个随机值x
-    int x = rand() % ROW;
-    int y = rand() % COL;
     printf("computer turns\n");
     while(1)
     {
         //随机值取3的余数 余数一定小于被除数 比如10%3的余数是1 假设是4 4能除3 所以是1 ...
-        x = rand() % NUM;
-        y = rand() % NUM;
+        int x = rand() % ROW;
+        int y = rand() % COL;
+
         if(board[x][y] != '*' && board[x][y] != '#')//判断有无冲突
         {
             board[x][y] = '#';//电脑#棋
@@ -101,77 +131,102 @@ void ComputerMove(char board[ROW][COL],int row,int col)
 }
 
 
-char JudgeWin(char board[ROW][COL],int row,int col)
+char JudgeWin(char board[ROW][COL],int row,int col)//判断胜者
 {
-
+    int j = 0;//循环时 代表列的计数
+    int i = 0;//循环时 代表行的计数
+    int count_P = 0;//玩家的计数器
+    int count_C = 0;//电脑的计数器
     //列的判断
-    int i = 0;
-    int count = 0; //每列符合元素的计数器
-    int count_f = 1;//每列连续元素的计数器
-
-    for(i = 0;i < col; i++)//把每列分开
-    {   
-        count = 0;
-        int j = 0;
-        for(j = 0;j < row; j++)//找到每行第一个元素
+    for(j = 0;j <= ROW; j++)
+    {
+        count_C = 0;//电脑
+        count_P = 0;//玩家
+        for(i = 0;i <= COL; i++)
         {
-            //i列的第j行元素
-            if(board[j][i] == '*')
+            if(board[i][j] == '*' )
             {
-                count++;
+                count_C = 0;
+                count_P++;
+            }
+            else if(board[i][j] == '#')
+            {
+                count_P = 0;
+                count_C++;
+            }
+            else
+            {
+                count_C = 0;
+                count_P = 0;
+            }
+            if(count_P == NUM)
+            {
+                return '*';
+            }
+            else if (count_C == NUM)
+            {
+                return '#';
             }
         }
-        if(count >= NUM)//一列中 有大于条件的元素 但不确定是否连续
-        //接下来判断是否连续
+    }
+    
+    //行的判断
+    for(i = 0;i <= COL; i++)
+    {
+        count_C = 0;
+        count_P = 0;
+        for(j = 0;j <= ROW; j++)
         {
-            int n = 1;
-            for(n = 1;n < row; n++)//列出这列的每个元素
+            if(board[i][j] == '*' )
             {
-                if(board[n -1][i]==board[n][i])//上一行的i列元素与下一列相等
-                {
-                    count_f++;
-                    if(count_f == NUM)
-                    {
-                        goto flag;
-                    }
-                }
-                else
-                {
-                    count_f = 1;
-                }
-                
-            } 
+                count_C = 0;
+                count_P++;
+            }
+            else if(board[i][j] == '#')
+            {
+                count_P = 0;
+                count_C++;
+            }
+            else
+            {
+                count_C = 0;
+                count_P = 0;
+            }
+            if(count_P == NUM)
+            {
+                return '*';
+            }
+            else if (count_C == NUM)
+            {
+                return '#';
+            }
         }
-        if(count_f == NUM)
+    }
+
+    //对角线的判断
+    //不会了...
+    
+    for(i = 0;i <= COL; i++)
+    {
+        int tmp = i;
+        for(j = tmp;j <= ROW; j++)
         {
-            flag:
-                return '*';//如果满足条件
-        }      
+            if(board[tmp][j] == '*')
+            {
+                count_P++;
+            }
+            else
+            {
+                count_P = 0;
+            }
+            tmp++;
+            
+            if (count_P == NUM)
+            {
+                return '*';
+            }
+        }
+
     }
 }   
-
-void PrintWinner(char board[ROW][COL],int row,int col)//输出胜者
-{
-    while(1)//开始走棋
-    {
-        //玩家下棋
-        Playmove(board,ROW,COL);
-        DisplayBoard(board,ROW,COL);
-        if(JudgeWin(board,ROW,COL) == '*')
-        {
-            printf("gamer wins\n");
-            break;
-        }
-        
-        //电脑下棋
-        ComputerMove(board,ROW,COL);
-        DisplayBoard(board,ROW,COL);
-        if(JudgeWin(board,ROW,COL) == '*')
-        {
-            printf("gamer wins\n");
-            break;
-        }
-    }
-
-}
 
