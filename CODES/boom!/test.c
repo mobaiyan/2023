@@ -10,7 +10,6 @@ void menu()
 
 void game()
 {
-    
 }
 
 int main()
@@ -25,8 +24,8 @@ int main()
         switch (input)
         {
         case 1 /* constant-expression */:
-            game(); 
-            break;   /* code */
+            game();
+            break; /* code */
         case 0:
             printf("over");
             break;
