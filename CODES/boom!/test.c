@@ -10,6 +10,7 @@ void menu()
 
 void game()
 {
+    
 }
 
 int main()
