@@ -7,6 +7,7 @@ int main(){
 
     int* *ppa = &pa;
 
+    * *ppa = 200;
     printf("%d ",a);
     printf("%d ",*pa);
     printf("%d ",* *ppa);
