@@ -1,3 +1,4 @@
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/cmake.dir
+D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/exam_0222.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
