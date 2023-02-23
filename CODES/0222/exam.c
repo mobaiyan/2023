@@ -25,7 +25,7 @@ int main(){
         }
         i++;
         scan /= 10;
-        sum += saveScan[count - 1] * pow(10,i -1);
+        sum += saveScan[count] * pow(10,i -1);
     }
 
     printf("%d", sum);
