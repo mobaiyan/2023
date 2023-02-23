@@ -106,6 +106,39 @@ build exam_0222.exe: C_EXECUTABLE_LINKER__exam_0222_Debug CMakeFiles/exam_0222.d
   TARGET_IMPLIB = libexam_0222.dll.a
   TARGET_PDB = exam_0222.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target prac_0223
+
+
+#############################################
+# Order-only phony target for prac_0223
+
+build cmake_object_order_depends_target_prac_0223: phony || CMakeFiles/prac_0223.dir
+
+build CMakeFiles/prac_0223.dir/prac_0223.c.obj: C_COMPILER__prac_0223_Debug D$:/Codes/C/2023/cmake/prac_0223.c || cmake_object_order_depends_target_prac_0223
+  DEP_FILE = CMakeFiles\prac_0223.dir\prac_0223.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\prac_0223.dir
+  OBJECT_FILE_DIR = CMakeFiles\prac_0223.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prac_0223
+
+
+#############################################
+# Link the executable prac_0223.exe
+
+build prac_0223.exe: C_EXECUTABLE_LINKER__prac_0223_Debug CMakeFiles/prac_0223.dir/prac_0223.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\prac_0223.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prac_0223.exe
+  TARGET_IMPLIB = libprac_0223.dll.a
+  TARGET_PDB = prac_0223.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build cmake: phony cmake.exe
 
 build exam_0222: phony exam_0222.exe
 
+build prac_0223: phony prac_0223.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build exam_0222: phony exam_0222.exe
 #############################################
 # Folder: D:/Codes/C/2023/cmake/cmake-build-debug
 
-build all: phony cmake.exe exam_0222.exe
+build all: phony cmake.exe exam_0222.exe prac_0223.exe
 
 # =============================================================================
 # Built-in targets

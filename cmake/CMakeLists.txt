@@ -7,3 +7,4 @@ add_executable(cmake main.c)
 
 
 add_executable(exam_0222 exam_0222.c)
+add_executable(prac_0223 prac_0223.c)
