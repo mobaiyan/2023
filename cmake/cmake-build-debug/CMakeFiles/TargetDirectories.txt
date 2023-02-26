@@ -1,5 +1,6 @@
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/cmake.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/exam_0222.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/prac_0223.dir
+D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0226.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir

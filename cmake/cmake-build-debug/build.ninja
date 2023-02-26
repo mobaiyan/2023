@@ -139,6 +139,39 @@ build prac_0223.exe: C_EXECUTABLE_LINKER__prac_0223_Debug CMakeFiles/prac_0223.d
   TARGET_IMPLIB = libprac_0223.dll.a
   TARGET_PDB = prac_0223.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target _0226
+
+
+#############################################
+# Order-only phony target for _0226
+
+build cmake_object_order_depends_target__0226: phony || CMakeFiles/_0226.dir
+
+build CMakeFiles/_0226.dir/_0226.c.obj: C_COMPILER___0226_Debug D$:/Codes/C/2023/cmake/_0226.c || cmake_object_order_depends_target__0226
+  DEP_FILE = CMakeFiles\_0226.dir\_0226.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\_0226.dir
+  OBJECT_FILE_DIR = CMakeFiles\_0226.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target _0226
+
+
+#############################################
+# Link the executable _0226.exe
+
+build _0226.exe: C_EXECUTABLE_LINKER___0226_Debug CMakeFiles/_0226.dir/_0226.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\_0226.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _0226.exe
+  TARGET_IMPLIB = lib_0226.dll.a
+  TARGET_PDB = _0226.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -165,6 +198,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build _0226: phony _0226.exe
+
 build cmake: phony cmake.exe
 
 build exam_0222: phony exam_0222.exe
@@ -179,7 +214,7 @@ build prac_0223: phony prac_0223.exe
 #############################################
 # Folder: D:/Codes/C/2023/cmake/cmake-build-debug
 
-build all: phony cmake.exe exam_0222.exe prac_0223.exe
+build all: phony cmake.exe exam_0222.exe prac_0223.exe _0226.exe
 
 # =============================================================================
 # Built-in targets
