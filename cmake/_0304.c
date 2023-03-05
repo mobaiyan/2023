@@ -2,6 +2,7 @@
 // Created by Zack on 2023/3/4.
 //
 #include <stdio.h>
+#include <string.h>
 
 //typedef int wc;
 //typedef enum Status wzbd;
@@ -36,6 +37,12 @@ int main() {
 //enum Status { low = 1, medium = 2, high = 3 };
 
 int main() {
-
+    char tmp[20];
+    scanf("%s",tmp);
+    int x = strcmp(tmp, "than" );
+    printf("%d\n",x);
+    if(x) {
+        printf("test");
+    }
     return 0;
 }
