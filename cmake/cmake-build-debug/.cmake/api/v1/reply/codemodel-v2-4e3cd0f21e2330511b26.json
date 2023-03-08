@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cmake",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_0226::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_0226-Debug-dc0944c9c7c91a2e4415.json",
+					"name" : "_0226",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "_0301::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_0301-Debug-9056f45ddf1a3903aeff.json",
+					"name" : "_0301",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "_0304::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_0304-Debug-3ab4d8371b8e3fa93841.json",
+					"name" : "_0304",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "_0305::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_0305-Debug-ccf1c5652eec8970f8d9.json",
+					"name" : "_0305",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "_0308::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_0308-Debug-6e6f611e9c247a57b2d1.json",
+					"name" : "_0308",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmake-Debug-690acb268da298ef0678.json",
+					"name" : "cmake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exam_0222::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exam_0222-Debug-af26a4be1277a887c3a1.json",
+					"name" : "exam_0222",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "prac_0223::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-prac_0223-Debug-fc53f7b9b43c6977a326.json",
+					"name" : "prac_0223",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Codes/C/2023/cmake/cmake-build-debug",
+		"source" : "D:/Codes/C/2023/cmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
