@@ -304,6 +304,72 @@ build _0308.exe: C_EXECUTABLE_LINKER___0308_Debug CMakeFiles/_0308.dir/_0308.c.o
   TARGET_IMPLIB = lib_0308.dll.a
   TARGET_PDB = _0308.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target _0310
+
+
+#############################################
+# Order-only phony target for _0310
+
+build cmake_object_order_depends_target__0310: phony || CMakeFiles/_0310.dir
+
+build CMakeFiles/_0310.dir/_0310.c.obj: C_COMPILER___0310_Debug D$:/Codes/C/2023/cmake/_0310.c || cmake_object_order_depends_target__0310
+  DEP_FILE = CMakeFiles\_0310.dir\_0310.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\_0310.dir
+  OBJECT_FILE_DIR = CMakeFiles\_0310.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target _0310
+
+
+#############################################
+# Link the executable _0310.exe
+
+build _0310.exe: C_EXECUTABLE_LINKER___0310_Debug CMakeFiles/_0310.dir/_0310.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\_0310.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _0310.exe
+  TARGET_IMPLIB = lib_0310.dll.a
+  TARGET_PDB = _0310.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target _0312
+
+
+#############################################
+# Order-only phony target for _0312
+
+build cmake_object_order_depends_target__0312: phony || CMakeFiles/_0312.dir
+
+build CMakeFiles/_0312.dir/_0312.c.obj: C_COMPILER___0312_Debug D$:/Codes/C/2023/cmake/_0312.c || cmake_object_order_depends_target__0312
+  DEP_FILE = CMakeFiles\_0312.dir\_0312.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\_0312.dir
+  OBJECT_FILE_DIR = CMakeFiles\_0312.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target _0312
+
+
+#############################################
+# Link the executable _0312.exe
+
+build _0312.exe: C_EXECUTABLE_LINKER___0312_Debug CMakeFiles/_0312.dir/_0312.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\_0312.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _0312.exe
+  TARGET_IMPLIB = lib_0312.dll.a
+  TARGET_PDB = _0312.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -340,6 +406,10 @@ build _0305: phony _0305.exe
 
 build _0308: phony _0308.exe
 
+build _0310: phony _0310.exe
+
+build _0312: phony _0312.exe
+
 build cmake: phony cmake.exe
 
 build exam_0222: phony exam_0222.exe
@@ -354,7 +424,7 @@ build prac_0223: phony prac_0223.exe
 #############################################
 # Folder: D:/Codes/C/2023/cmake/cmake-build-debug
 
-build all: phony cmake.exe exam_0222.exe prac_0223.exe _0226.exe _0301.exe _0304.exe _0305.exe _0308.exe
+build all: phony cmake.exe exam_0222.exe prac_0223.exe _0226.exe _0301.exe _0304.exe _0305.exe _0308.exe _0310.exe _0312.exe
 
 # =============================================================================
 # Built-in targets

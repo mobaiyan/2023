@@ -6,5 +6,7 @@ D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0301.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0304.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0305.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0308.dir
+D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0310.dir
+D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/_0312.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Codes/C/2023/cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
